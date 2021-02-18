@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  app1:
+    image: node-web-app
+    deploy:
+      replicas: 3
+    ports:
+      - 3000:3000
+  app2:
+    image: node-web-app
+    deploy:
+      replicas: 2
+    ports:
+      - 3001:3000
